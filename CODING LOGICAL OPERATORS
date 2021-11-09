@@ -1,0 +1,30 @@
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int income;
+		int age;
+		int MIN_level;
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.print("Please enter your income : RM");
+		income = scan.nextInt();
+		
+		System.out.print("Please enter the minimal level : RM");
+		MIN_level = scan.nextInt();
+		
+		System.out.print("Please enter your age : ");
+		age = scan.nextInt();
+		
+		if ((income > MIN_level) && (age <50))
+		{
+			System.out.println("You can apply the loan.");
+		}
+		else
+		{
+			System.out.println("You CAN'T apply the loan.");
+		}
+		
+		
+
+	}
+
+}
