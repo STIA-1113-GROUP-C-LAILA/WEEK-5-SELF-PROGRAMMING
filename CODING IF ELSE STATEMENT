@@ -1,0 +1,26 @@
+public class IfElse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int amount = 15;
+		int balance = 50;
+		int overdraftpenalty = 50;
+		
+		if (amount < balance)
+			balance = balance - amount;
+		else
+			balance = balance - overdraftpenalty;
+		
+		if (amount < balance)
+		{
+			System.out.println("The new balance in your account : RM" + balance);
+		}
+		else
+		{
+			System.out.println("TRANSACTION IS NOT ALLOWED");
+		}
+		
+			
+	}	
+	
+}
